@@ -22,6 +22,15 @@
 a {
   text-decoration: none;
 }
+.darkFilter::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #000000;
+  opacity: 0;
+}
 
 /* navigation */
 header .container {
@@ -59,10 +68,13 @@ header .container {
 }
 
 /* mobile view */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 650px) {
   header .container {
     margin: 0px 20px;
     max-width: 100vw;
+  }
+  .darkFilter.toggle::before {
+    opacity: 0.7;
   }
 
   /* mobile menu */
