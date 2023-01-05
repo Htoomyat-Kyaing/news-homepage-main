@@ -115,6 +115,30 @@ main .container {
   font-weight: 700;
 }
 
+/* section 2 */
+.s2 {
+  padding: 20px 20px;
+  background-color: var(--very-dark-blue);
+  color: var(--off-white);
+}
+.s2 h2 {
+  color: var(--soft-orange);
+  font-size: 2.2rem;
+  margin: 0px;
+}
+.s2 article {
+  border-bottom: solid 1px var(--dark-grayish-blue);
+  padding: 10px 0px;
+}
+.s2 article:last-child {
+  border-bottom: none;
+}
+.s2 article p {
+  font-size: 0.8rem;
+  color: var(--grayish-blue);
+  line-height: 1.4rem;
+}
+
 /* section 3 */
 .s3 {
   grid-column: 1 / -1;
